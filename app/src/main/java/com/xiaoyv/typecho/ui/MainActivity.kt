@@ -1,18 +1,14 @@
 package com.xiaoyv.typecho.ui
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import com.xiaoyv.blueprint.base.mvvm.normal.BaseViewModelActivity
 import com.xiaoyv.typecho.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class MainActivity : BaseViewModelActivity<ActivityMainBinding, MainViewModel>() {
+    override fun initView() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    }
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+    override fun initData() {
 
-        setSupportActionBar(binding.toolbar)
     }
 }
